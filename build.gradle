@@ -1,0 +1,25 @@
+plugins {
+    id 'java-platform'
+    id 'maven-publish'
+}
+
+group 'com.coder4'
+version '1.0'
+
+dependencies {
+    constraints {
+        api 'com.google.protobuf:protobuf-java:3.17.3'
+        api 'io.grpc:grpc-stub:1.39.0'
+        api 'io.grpc:grpc-protobuf:1.39.0'
+        api 'io.grpc:grpc-netty-shaded:1.39.0'
+        api 'org.slf4j:slf4j-api:1.7.32'
+    }
+}
+
+publishing {
+    publications {
+        myPlatform(MavenPublication) {
+            from components.javaPlatform
+        }
+    }
+}

@@ -13,6 +13,8 @@ dependencies {
         api 'io.grpc:grpc-protobuf:1.39.0'
         api 'io.grpc:grpc-netty-shaded:1.39.0'
         api 'org.slf4j:slf4j-api:1.7.32'
+        api 'mysql:mysql-connector-java:8.0.20'
+        api 'org.projectlombok:lombok:1.18.20'
     }
 }
 
